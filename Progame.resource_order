@@ -1,4 +1,10 @@
 {
-  "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Sprites","order":3,"path":"folders/Sprites.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"PlayerObj","order":1,"path":"objects/PlayerObj/PlayerObj.yy",},
+    {"name":"PlayerIdle","order":1,"path":"sprites/PlayerIdle/PlayerIdle.yy",},
+    {"name":"PlayerRun","order":2,"path":"sprites/PlayerRun/PlayerRun.yy",},
+  ],
 }
