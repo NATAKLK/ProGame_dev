@@ -199,14 +199,22 @@ if (move != 0)
 // SISTEMA DE CÁMARA (INTACTO)
 //-------------------------------------------------
 
+// 1. Detectar si ya nos movimos
 var input_detectado = (input_right || input_left || input_jump_pressed || input_attack);
 
-if (input_detectado)
+if (input_detectado) {
     ya_se_movio = true;
+}
 
-var target_w = ya_se_movio ? cam_ancho_juego : cam_ancho_inicio;
-var target_h = ya_se_movio ? cam_alto_juego : cam_alto_inicio;
+// --- MEJORA: Excepción para un Room específico ---
+// Cambia "rm_menu" por el nombre real de tu room donde NO quieres zoom
+var es_room_sin_zoom = (room == rm_menu); 
 
+// Si ya se movió O si estamos en el room sin zoom, usamos el tamaño de juego
+var target_w = (ya_se_movio || es_room_sin_zoom) ? cam_ancho_juego : cam_ancho_inicio;
+var target_h = (ya_se_movio || es_room_sin_zoom) ? cam_alto_juego : cam_alto_inicio;
+
+// El objetivo a seguir (personaje o ratón)
 var target_x = ya_se_movio ? x : mouse_x;
 var target_y = ya_se_movio ? y : mouse_y;
 
@@ -216,23 +224,28 @@ var cur_h = camera_get_view_height(cam);
 var cur_x = camera_get_view_x(cam);
 var cur_y = camera_get_view_y(cam);
 
+// 2. Aplicar el Zoom suave
 var new_w = lerp(cur_w, target_w, zoom_velocidad);
 var new_h = lerp(cur_h, target_h, zoom_velocidad);
 camera_set_view_size(cam, new_w, new_h);
 
+// 3. Calcular hacia dónde debe ir la cámara (centrada)
 var cam_target_x = target_x - (new_w / 2);
 var cam_target_y = target_y - (new_h / 2);
 
-cam_target_x = clamp(cam_target_x, 0, room_width - new_w);
-cam_target_y = clamp(cam_target_y, 0, room_height - new_h);
-
 var cam_vel = ya_se_movio ? 0.1 : 0.05;
 
+// 4. Mover la cámara suavemente
 var new_cam_x = lerp(cur_x, cam_target_x, cam_vel);
 var new_cam_y = lerp(cur_y, cam_target_y, cam_vel);
 
-camera_set_view_pos(cam, new_cam_x, new_cam_y);
+// --- MEJORA: Clampear al FINAL ---
+// Esto garantiza 100% que la cámara JAMÁS muestre un borde negro en este frame
+new_cam_x = clamp(new_cam_x, 0, room_width - new_w);
+new_cam_y = clamp(new_cam_y, 0, room_height - new_h);
 
+// 5. Aplicar la posición final
+camera_set_view_pos(cam, new_cam_x, new_cam_y);
 
 //-------------------------------------------------
 // ANIMACIONES

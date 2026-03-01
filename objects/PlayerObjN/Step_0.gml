@@ -68,7 +68,7 @@ if (input_attack)
     {
         isAttacking = true;
         comboStep = 1;
-        sprite_index = PlayerGlitchCombo;
+        sprite_index = PlayerNCombo;
         image_index = 0;
     }
     else
@@ -89,7 +89,7 @@ if (isAttacking)
         if (comboStep == 1 && attackBuffer > 0)
         {
             comboStep = 2;
-            sprite_index = PlayerGlitchComboEnd;
+            sprite_index = PlayerNComboEnd;
             image_index = 0;
             attackBuffer = 0;
         }
@@ -216,17 +216,17 @@ if (!isAttacking)
     {
         if (vsp < 0)
         {
-            if (sprite_index != PlayerGlitchJump)
+            if (sprite_index != PlayerNJump)
             {
-                sprite_index = PlayerGlitchJump;
+                sprite_index = PlayerNJump;
                 image_index = 0;
             }
         }
         else
         {
-            if (sprite_index != PlayerGlitchFall)
+            if (sprite_index != PlayerNFall)
             {
-                sprite_index = PlayerGlitchFall;
+                sprite_index = PlayerNFall;
                 image_index = 0;
             }
         }
@@ -237,26 +237,26 @@ if (!isAttacking)
         {
             if (input_run)
             {
-                if (sprite_index != PlayerGlitchRun)
+                if (sprite_index != PlayerNRun)
                 {
-                    sprite_index = PlayerGlitchRun;
+                    sprite_index = PlayerNRun;
                     image_index = 0;
                 }
             }
             else
             {
-                if (sprite_index != PlayerGlitchWalk)
+                if (sprite_index != PlayerNWalk)
                 {
-                    sprite_index = PlayerGlitchWalk;
+                    sprite_index = PlayerNWalk;
                     image_index = 0;
                 }
             }
         }
         else
         {
-            if (sprite_index != PlayerGlitchIdle)
+            if (sprite_index != PlayerNIdle)
             {
-                sprite_index = PlayerGlitchIdle;
+                sprite_index = PlayerNIdle;
                 image_index = 0;
             }
         }

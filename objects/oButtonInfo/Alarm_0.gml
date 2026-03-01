@@ -1,4 +1,4 @@
-// Inherit the parent event
+ // Inherit the parent event
 event_inherited();
 
 if (instance_exists(oControls))
@@ -6,7 +6,7 @@ if (instance_exists(oControls))
 	instance_destroy(oControls);
 }
 
-else
+else 
 {
 	instance_create_layer(x + 8 , y + 30, "Instances", oControls); 
 }
