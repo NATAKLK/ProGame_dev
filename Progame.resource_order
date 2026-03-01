@@ -1,16 +1,17 @@
 {
   "FolderOrderSettings":[
-    {"name":"Levels","order":7,"path":"folders/Levels.yy",},
+    {"name":"Levels","order":4,"path":"folders/Levels.yy",},
     {"name":"Level_1","order":1,"path":"folders/Levels/Level_1.yy",},
     {"name":"Level_1_Sprites","order":1,"path":"folders/Levels/Level_1/Level_1_Sprites.yy",},
-    {"name":"Sprites","order":3,"path":"folders/Sprites.yy",},
-    {"name":"Player","order":16,"path":"folders/Sprites/Player.yy",},
+    {"name":"Sprites","order":2,"path":"folders/Sprites.yy",},
+    {"name":"Skeleton","order":1,"path":"folders/Sprites/Skeleton.yy",},
     {"name":"Glitch","order":1,"path":"folders/Sprites/Player/Glitch.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"Level_1_Solids","order":2,"path":"objects/Level_1_Solids/Level_1_Solids.yy",},
-    {"name":"obj_solid","order":5,"path":"objects/obj_solid/obj_solid.yy",},
+    {"name":"obj_solid","order":3,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"PlayerObj","order":1,"path":"objects/PlayerObj/PlayerObj.yy",},
+    {"name":"Skeleton","order":5,"path":"objects/Skeleton/Skeleton.yy",},
     {"name":"Level_1_ExitDoor_1","order":4,"path":"sprites/Level_1_ExitDoor_1/Level_1_ExitDoor_1.yy",},
     {"name":"Level_1_ExitDoor_2","order":5,"path":"sprites/Level_1_ExitDoor_2/Level_1_ExitDoor_2.yy",},
     {"name":"Level_1_ExitDoor_3","order":6,"path":"sprites/Level_1_ExitDoor_3/Level_1_ExitDoor_3.yy",},
@@ -29,6 +30,7 @@
     {"name":"PlayerNJump","order":4,"path":"sprites/PlayerNJump/PlayerNJump.yy",},
     {"name":"PlayerNRun","order":5,"path":"sprites/PlayerNRun/PlayerNRun.yy",},
     {"name":"PlayerNWalk","order":6,"path":"sprites/PlayerNWalk/PlayerNWalk.yy",},
-    {"name":"Sprite6","order":6,"path":"sprites/Sprite6/Sprite6.yy",},
+    {"name":"SkeletonWalk","order":1,"path":"sprites/SkeletonWalk/SkeletonWalk.yy",},
+    {"name":"Sprite6","order":2,"path":"sprites/Sprite6/Sprite6.yy",},
   ],
 }
