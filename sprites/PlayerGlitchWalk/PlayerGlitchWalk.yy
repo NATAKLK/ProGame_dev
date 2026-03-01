@@ -32,7 +32,7 @@
   ],
   "name":"PlayerGlitchWalk",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Glitch",
     "path":"folders/Sprites/Glitch.yy",
@@ -112,7 +112,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":17,
+    "yorigin":34,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
