@@ -4,8 +4,8 @@
     {"name":"Level_1","order":1,"path":"folders/Levels/Level_1.yy",},
     {"name":"Level_1_Sprites","order":1,"path":"folders/Levels/Level_1/Level_1_Sprites.yy",},
     {"name":"Sprites","order":2,"path":"folders/Sprites.yy",},
-    {"name":"Skeleton","order":1,"path":"folders/Sprites/Skeleton.yy",},
     {"name":"Glitch","order":1,"path":"folders/Sprites/Player/Glitch.yy",},
+    {"name":"Skeleton","order":1,"path":"folders/Sprites/Skeleton.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"Level_1_Solids","order":2,"path":"objects/Level_1_Solids/Level_1_Solids.yy",},
