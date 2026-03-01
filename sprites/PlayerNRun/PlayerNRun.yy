@@ -32,7 +32,7 @@
   ],
   "name":"PlayerNRun",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Normal",
     "path":"folders/Sprites/Player/Normal.yy",
@@ -112,7 +112,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":17,
-    "yorigin":16,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

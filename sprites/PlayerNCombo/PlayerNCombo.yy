@@ -25,7 +25,7 @@
   ],
   "name":"PlayerNCombo",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Normal",
     "path":"folders/Sprites/Player/Normal.yy",
@@ -84,7 +84,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":30,
-    "yorigin":19,
+    "yorigin":38,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

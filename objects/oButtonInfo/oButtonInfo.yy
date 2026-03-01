@@ -6,12 +6,17 @@
   ],
   "managed":true,
   "name":"oButtonInfo",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParentInfo","path":"objects/oButtonParentInfo/oButtonParentInfo.yy",},"propertyId":{"name":"button_text","path":"objects/oButtonParentInfo/oButtonParentInfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Controls",},
+  ],
   "parent":{
     "name":"UI",
     "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oButtonParentInfo",
+    "path":"objects/oButtonParentInfo/oButtonParentInfo.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
