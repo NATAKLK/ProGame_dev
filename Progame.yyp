@@ -12,7 +12,10 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Levels","folderPath":"folders/Levels.yy","name":"Levels","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level_1","folderPath":"folders/Levels/Level_1.yy","name":"Level_1","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
     {"$GMFolder":"","%Name":"Level_1_Sprites","folderPath":"folders/Levels/Level_1/Level_1_Sprites.yy","name":"Level_1_Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+=======
+>>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Glitch","folderPath":"folders/Sprites/Player/Glitch.yy","name":"Glitch","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -30,6 +33,7 @@
     {"id":{"name":"Level_1_Solids","path":"objects/Level_1_Solids/Level_1_Solids.yy",},},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
     {"id":{"name":"PlayerObj","path":"objects/PlayerObj/PlayerObj.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"Level_1_Room","path":"rooms/Level_1_Room/Level_1_Room.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Level_1_Background","path":"sprites/Level_1_Background/Level_1_Background.yy",},},
@@ -54,12 +58,23 @@
     {"id":{"name":"PlayerNRun","path":"sprites/PlayerNRun/PlayerNRun.yy",},},
     {"id":{"name":"PlayerNWalk","path":"sprites/PlayerNWalk/PlayerNWalk.yy",},},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
+=======
+    {"id":{"name":"Solid_Structures","path":"objects/Solid_Structures/Solid_Structures.yy",},},
+    {"id":{"name":"Room_Level_1","path":"rooms/Room_Level_1/Room_Level_1.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Level_1_Background","path":"sprites/Level_1_Background/Level_1_Background.yy",},},
+    {"id":{"name":"Level_1_Structures","path":"sprites/Level_1_Structures/Level_1_Structures.yy",},},
+    {"id":{"name":"PlayerDesingSpr","path":"sprites/PlayerDesingSpr/PlayerDesingSpr.yy",},},
+    {"id":{"name":"PlayerIdle","path":"sprites/PlayerIdle/PlayerIdle.yy",},},
+    {"id":{"name":"PlayerRun","path":"sprites/PlayerRun/PlayerRun.yy",},},
+>>>>>>> Stashed changes
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Level_1_Room","path":"rooms/Level_1_Room/Level_1_Room.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room_Level_1","path":"rooms/Room_Level_1/Room_Level_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -1,8 +1,13 @@
 {
   "FolderOrderSettings":[
+<<<<<<< Updated upstream
     {"name":"Levels","order":7,"path":"folders/Levels.yy",},
     {"name":"Level_1","order":1,"path":"folders/Levels/Level_1.yy",},
     {"name":"Level_1_Sprites","order":1,"path":"folders/Levels/Level_1/Level_1_Sprites.yy",},
+=======
+    {"name":"Levels","order":5,"path":"folders/Levels.yy",},
+    {"name":"Level_1","order":1,"path":"folders/Levels/Level_1.yy",},
+>>>>>>> Stashed changes
     {"name":"Sprites","order":3,"path":"folders/Sprites.yy",},
     {"name":"Glitch","order":1,"path":"folders/Sprites/Player/Glitch.yy",},
     {"name":"Player","order":16,"path":"folders/Sprites/Player.yy",},
@@ -11,6 +16,7 @@
     {"name":"Level_1_Solids","order":2,"path":"objects/Level_1_Solids/Level_1_Solids.yy",},
     {"name":"obj_solid","order":5,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"PlayerObj","order":1,"path":"objects/PlayerObj/PlayerObj.yy",},
+<<<<<<< Updated upstream
     {"name":"Level_1_ExitDoor_1","order":4,"path":"sprites/Level_1_ExitDoor_1/Level_1_ExitDoor_1.yy",},
     {"name":"Level_1_ExitDoor_2","order":5,"path":"sprites/Level_1_ExitDoor_2/Level_1_ExitDoor_2.yy",},
     {"name":"Level_1_ExitDoor_3","order":6,"path":"sprites/Level_1_ExitDoor_3/Level_1_ExitDoor_3.yy",},
@@ -30,5 +36,12 @@
     {"name":"PlayerNRun","order":5,"path":"sprites/PlayerNRun/PlayerNRun.yy",},
     {"name":"PlayerNWalk","order":6,"path":"sprites/PlayerNWalk/PlayerNWalk.yy",},
     {"name":"Sprite6","order":6,"path":"sprites/Sprite6/Sprite6.yy",},
+=======
+    {"name":"Solid_Structures","order":2,"path":"objects/Solid_Structures/Solid_Structures.yy",},
+    {"name":"Level_1_Background","order":1,"path":"sprites/Level_1_Background/Level_1_Background.yy",},
+    {"name":"Level_1_Structures","order":3,"path":"sprites/Level_1_Structures/Level_1_Structures.yy",},
+    {"name":"PlayerIdle","order":1,"path":"sprites/PlayerIdle/PlayerIdle.yy",},
+    {"name":"PlayerRun","order":2,"path":"sprites/PlayerRun/PlayerRun.yy",},
+>>>>>>> Stashed changes
   ],
 }
