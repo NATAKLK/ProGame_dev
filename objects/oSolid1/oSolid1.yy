@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":{
-    "name":"sSolid2",
-    "path":"sprites/sSolid2/sSolid2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }
