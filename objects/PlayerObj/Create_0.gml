@@ -11,10 +11,10 @@ gravity_down = 0.1;
 jump_force = -3;
 
 // TOLERANCIAS
-coyoteTimeMax = 6;
+coyoteTimeMax = 4;
 coyoteTimer = 0;
 
-jumpBufferMax = 6;
+jumpBufferMax = 4;
 jumpBuffer = 0;
 
 // ESCALA
