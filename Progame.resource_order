@@ -1,0 +1,24 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Sprites","order":3,"path":"folders/Sprites.yy",},
+    {"name":"Player","order":16,"path":"folders/Sprites/Player.yy",},
+    {"name":"Glitch","order":1,"path":"folders/Sprites/Player/Glitch.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_solid","order":5,"path":"objects/obj_solid/obj_solid.yy",},
+    {"name":"PlayerObj","order":1,"path":"objects/PlayerObj/PlayerObj.yy",},
+    {"name":"PlayerGlitchComboEnd","order":1,"path":"sprites/PlayerGlitchComboEnd/PlayerGlitchComboEnd.yy",},
+    {"name":"PlayerGlitchFall","order":2,"path":"sprites/PlayerGlitchFall/PlayerGlitchFall.yy",},
+    {"name":"PlayerGlitchIdle","order":3,"path":"sprites/PlayerGlitchIdle/PlayerGlitchIdle.yy",},
+    {"name":"PlayerGlitchJump","order":4,"path":"sprites/PlayerGlitchJump/PlayerGlitchJump.yy",},
+    {"name":"PlayerGlitchRun","order":5,"path":"sprites/PlayerGlitchRun/PlayerGlitchRun.yy",},
+    {"name":"PlayerGlitchWalk","order":6,"path":"sprites/PlayerGlitchWalk/PlayerGlitchWalk.yy",},
+    {"name":"PlayerNComboEnd","order":1,"path":"sprites/PlayerNComboEnd/PlayerNComboEnd.yy",},
+    {"name":"PlayerNFall","order":2,"path":"sprites/PlayerNFall/PlayerNFall.yy",},
+    {"name":"PlayerNIdle","order":3,"path":"sprites/PlayerNIdle/PlayerNIdle.yy",},
+    {"name":"PlayerNJump","order":4,"path":"sprites/PlayerNJump/PlayerNJump.yy",},
+    {"name":"PlayerNRun","order":5,"path":"sprites/PlayerNRun/PlayerNRun.yy",},
+    {"name":"PlayerNWalk","order":6,"path":"sprites/PlayerNWalk/PlayerNWalk.yy",},
+    {"name":"Sprite6","order":6,"path":"sprites/Sprite6/Sprite6.yy",},
+  ],
+}
