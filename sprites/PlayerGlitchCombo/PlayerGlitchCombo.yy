@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"Glitch",
-    "path":"folders/Sprites/Glitch.yy",
+    "path":"folders/Sprites/Player/Glitch.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
