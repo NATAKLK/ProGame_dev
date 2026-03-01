@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oTitle",
+  "%Name":"oStructureMap",
   "eventList":[],
   "managed":true,
-  "name":"oTitle",
+  "name":"oStructureMap",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTitle",
-    "path":"sprites/sTitle/sTitle.yy",
+    "name":"sStructureMap",
+    "path":"sprites/sStructureMap/sStructureMap.yy",
   },
   "spriteMaskId":null,
   "visible":true,

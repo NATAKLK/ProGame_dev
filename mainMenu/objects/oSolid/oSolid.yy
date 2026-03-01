@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oTitle",
+  "%Name":"oSolid",
   "eventList":[],
   "managed":true,
-  "name":"oTitle",
+  "name":"oSolid",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,11 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"sTitle",
-    "path":"sprites/sTitle/sTitle.yy",
+    "name":"sSolid",
+    "path":"sprites/sSolid/sSolid.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
