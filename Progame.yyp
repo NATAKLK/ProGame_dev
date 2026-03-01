@@ -11,7 +11,9 @@
   "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Glitch","folderPath":"folders/Sprites/Glitch.yy","name":"Glitch","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Glitch","folderPath":"folders/Sprites/Player/Glitch.yy","name":"Glitch","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Normal","folderPath":"folders/Sprites/Player/Normal.yy","name":"Normal","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
