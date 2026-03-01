@@ -1,6 +1,4 @@
-// ========================
 // INPUT
-// ========================
 
 var input_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var input_left  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
@@ -21,16 +19,10 @@ var input_attack = mouse_check_button_pressed(mb_left) || keyboard_check(ord("X"
 var move = input_right - input_left;
 
 
-// ========================
-// DETECTAR SUELO
-// ========================
-
 var onGround = place_meeting(x, y + 1, obj_solid);
 
 
-// ========================
 // COYOTE TIME
-// ========================
 
 if (onGround)
 {
@@ -42,9 +34,7 @@ else
 }
 
 
-// ========================
 // JUMP BUFFER
-// ========================
 
 if (input_jump_pressed)
 {
@@ -56,9 +46,7 @@ else
 }
 
 
-// ========================
 // SALTO
-// ========================
 
 if (jumpBuffer > 0 && coyoteTimer > 0)
 {
@@ -68,9 +56,7 @@ if (jumpBuffer > 0 && coyoteTimer > 0)
 }
 
 
-// ========================
 // GRAVEDAD DINÁMICA
-// ========================
 
 if (vsp < 0)
     vsp += gravity_up;
@@ -78,9 +64,7 @@ else
     vsp += gravity_down;
 
 
-// ========================
 // SALTO VARIABLE
-// ========================
 
 if (vsp < 0 && !input_jump_hold)
 {
@@ -88,9 +72,7 @@ if (vsp < 0 && !input_jump_hold)
 }
 
 
-// ========================
 // SISTEMA DE ATAQUE
-// ========================
 
 if (input_attack)
 {
@@ -116,7 +98,6 @@ if (isAttacking)
 {
     image_speed = 1;
 
-    // Cuando termina la animación actual
     if (image_index >= image_number - 1)
     {
         if (comboStep == 1 && attackBuffer > 0)
@@ -133,11 +114,6 @@ if (isAttacking)
         }
     }
 }
-
-
-// ========================
-// ACELERACIÓN HORIZONTAL
-// ========================
 
 var accel = onGround ? accel_ground : accel_air;
 
@@ -157,21 +133,16 @@ if (!isAttacking)
 }
 else
 {
-    hsp = 0; // Bloquea movimiento durante ataque
+    hsp = 0;
 }
 
 
-// ========================
 // VELOCIDAD MÁXIMA
-// ========================
-
 var currentMaxSpeed = input_run ? maxSpeed * 1.5 : maxSpeed;
 hsp = clamp(hsp, -currentMaxSpeed, currentMaxSpeed);
 
 
-// ========================
 // COLISIÓN HORIZONTAL
-// ========================
 
 var hsp_abs = abs(hsp);
 var hsp_sign = sign(hsp);
@@ -190,9 +161,7 @@ repeat (hsp_abs)
 }
 
 
-// ========================
 // COLISIÓN VERTICAL
-// ========================
 
 var vsp_abs = abs(vsp);
 var vsp_sign = sign(vsp);
@@ -211,9 +180,7 @@ repeat (vsp_abs)
 }
 
 
-// ========================
 // VOLTEAR SPRITE
-// ========================
 
 if (move != 0)
 {
@@ -221,9 +188,7 @@ if (move != 0)
 }
 
 
-// ========================
-// ANIMACIONES (SOLO SI NO ATACA)
-// ========================
+// ANIMACIONES
 
 if (!isAttacking)
 {
