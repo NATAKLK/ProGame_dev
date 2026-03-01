@@ -39,6 +39,9 @@
     "name":"PlayerGlitchIdle",
     "path":"sprites/PlayerGlitchIdle/PlayerGlitchIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"PlayerGlitchIdle",
+    "path":"sprites/PlayerGlitchIdle/PlayerGlitchIdle.yy",
+  },
   "visible":true,
 }

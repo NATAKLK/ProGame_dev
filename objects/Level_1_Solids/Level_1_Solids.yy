@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"Level_1_Structures",
     "path":"sprites/Level_1_Structures/Level_1_Structures.yy",
