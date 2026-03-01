@@ -1,3 +1,5 @@
+hp = 10
+
 // MOVIMIENTO
 hsp = 0;
 vsp = 0;
@@ -24,6 +26,7 @@ image_xscale = base_scale;
 
 // ATAQUE
 isAttacking = false;
+hasHit = false;
 comboStep = 0;
 attackBuffer = 0;
 attackBufferMax = 10;

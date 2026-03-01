@@ -1,0 +1,15 @@
+hsp = 0;
+vsp = 0;
+hsp_frac = 0;
+vsp_frac = 0;
+hp = 2;
+isHit = false;
+isAttacking = false;
+hit_timer = 0;
+gravity_up = 0.3;
+gravity_down = 0.5;
+attack_range = 40;
+vision_range = 200;
+move_speed = 1.5;
+target = noone;
+hasDealtDamage = false;

@@ -29,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"SkeletonIdle",
-    "path":"sprites/SkeletonIdle/SkeletonIdle.yy",
+    "name":"SkeletonIdle1",
+    "path":"sprites/SkeletonIdle1/SkeletonIdle1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

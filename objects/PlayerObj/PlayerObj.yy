@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Skeleton","path":"objects/Skeleton/Skeleton.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"PlayerObj",
@@ -36,12 +37,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"PlayerGlitchIdle",
-    "path":"sprites/PlayerGlitchIdle/PlayerGlitchIdle.yy",
+    "name":"PlayerGlitchIdle1",
+    "path":"sprites/PlayerGlitchIdle1/PlayerGlitchIdle1.yy",
   },
   "spriteMaskId":{
-    "name":"PlayerGlitchIdle",
-    "path":"sprites/PlayerGlitchIdle/PlayerGlitchIdle.yy",
+    "name":"PlayerGlitchIdle1",
+    "path":"sprites/PlayerGlitchIdle1/PlayerGlitchIdle1.yy",
   },
   "visible":true,
 }
