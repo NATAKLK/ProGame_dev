@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Skeleton",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oSolid1",
+  "eventList":[],
   "managed":true,
-  "name":"Skeleton",
+  "name":"oSolid1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entity",
-    "path":"folders/Objects/Entity.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"SkeletonIdle",
-    "path":"sprites/SkeletonIdle/SkeletonIdle.yy",
+    "name":"sSolid2",
+    "path":"sprites/sSolid2/sSolid2.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -9,8 +9,8 @@
   "name":"PlayerObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Progame",
-    "path":"Progame.yyp",
+    "name":"Entity",
+    "path":"folders/Objects/Entity.yy",
   },
   "parentObjectId":null,
   "persistent":false,

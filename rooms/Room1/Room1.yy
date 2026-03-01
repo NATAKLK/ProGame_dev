@@ -74,8 +74,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"Progame",
-    "path":"Progame.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
