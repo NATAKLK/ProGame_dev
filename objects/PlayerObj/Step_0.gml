@@ -1,3 +1,4 @@
+// INPUT
 var input_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var input_left  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
 var input_run   = keyboard_check(vk_shift);
@@ -15,26 +16,22 @@ var input_jump_hold =
 var input_attack = mouse_check_button_pressed(mb_left) || keyboard_check(ord("X"));
 
 var move = input_right - input_left;
-
 var onGround = place_meeting(x, y + 1, obj_solid);
 
+
+//-------------------------------------------------
+// COYOTE TIME
+//-------------------------------------------------
+
 if (onGround)
-{
     coyoteTimer = coyoteTimeMax;
-}
 else
-{
     coyoteTimer--;
-}
 
 if (input_jump_pressed)
-{
     jumpBuffer = jumpBufferMax;
-}
 else
-{
     jumpBuffer--;
-}
 
 if (jumpBuffer > 0 && coyoteTimer > 0)
 {
@@ -43,15 +40,23 @@ if (jumpBuffer > 0 && coyoteTimer > 0)
     coyoteTimer = 0;
 }
 
+
+//-------------------------------------------------
+// GRAVEDAD
+//-------------------------------------------------
+
 if (vsp < 0)
     vsp += gravity_up;
 else
     vsp += gravity_down;
 
 if (vsp < 0 && !input_jump_hold)
-{
     vsp *= 0.5;
-}
+
+
+//-------------------------------------------------
+// ATAQUE
+//-------------------------------------------------
 
 if (input_attack)
 {
@@ -69,9 +74,7 @@ if (input_attack)
 }
 
 if (attackBuffer > 0)
-{
     attackBuffer--;
-}
 
 if (isAttacking)
 {
@@ -94,29 +97,25 @@ if (isAttacking)
     }
 }
 
-var accel = onGround ? accel_ground : accel_air;
+
+//-------------------------------------------------
+// MOVIMIENTO HORIZONTAL SIMPLE (SIN ACELERACIÓN)
+//-------------------------------------------------
 
 if (!isAttacking)
 {
-    if (move != 0)
-    {
-        hsp += move * accel;
-    }
-    else
-    {
-        if (hsp > 0)
-            hsp = max(0, hsp - friction);
-        else if (hsp < 0)
-            hsp = min(0, hsp + friction);
-    }
+    var currentMaxSpeed = input_run ? maxSpeed * 1.5 : maxSpeed;
+    hsp = move * currentMaxSpeed;
 }
 else
 {
     hsp = 0;
 }
 
-var currentMaxSpeed = input_run ? maxSpeed * 1.5 : maxSpeed;
-hsp = clamp(hsp, -currentMaxSpeed, currentMaxSpeed);
+
+//-------------------------------------------------
+// MOVIMIENTO HORIZONTAL CON COLISIONES
+//-------------------------------------------------
 
 hsp_frac += hsp;
 var hsp_int = round(hsp_frac);
@@ -125,36 +124,27 @@ hsp_frac -= hsp_int;
 var hsp_abs = abs(hsp_int);
 var hsp_sign = sign(hsp_int);
 
-if (hsp_abs > 0) {
-    repeat (hsp_abs) {
-        if (place_meeting(x + hsp_sign, y, obj_solid)) {
-            var ty = 1;
-            while (ty <= 12) { 
-                if (!place_meeting(x + hsp_sign, y - ty, obj_solid)) {
-                    y -= ty;
-                    break;
-                }
-                ty++;
-            }
-        }
-        
-        if (!place_meeting(x + hsp_sign, y, obj_solid) && !place_meeting(x, y + 1, obj_solid) && place_meeting(x + hsp_sign, y + 13, obj_solid)) {
-            var dy = 1;
-            while (!place_meeting(x + hsp_sign, y + dy, obj_solid) && dy <= 12) {
-                dy++;
-            }
-            y += dy - 1;
-        }
-
-        if (!place_meeting(x + hsp_sign, y, obj_solid)) {
+if (hsp_abs > 0)
+{
+    repeat (hsp_abs)
+    {
+        if (!place_meeting(x + hsp_sign, y, obj_solid))
+        {
             x += hsp_sign;
-        } else {
+        }
+        else
+        {
             hsp = 0;
-            hsp_frac = 0; 
+            hsp_frac = 0;
             break;
         }
     }
 }
+
+
+//-------------------------------------------------
+// MOVIMIENTO VERTICAL CON COLISIONES
+//-------------------------------------------------
 
 vsp_frac += vsp;
 var vsp_int = round(vsp_frac);
@@ -163,7 +153,8 @@ vsp_frac -= vsp_int;
 var vsp_abs = abs(vsp_int);
 var vsp_sign = sign(vsp_int);
 
-if (vsp_abs > 0) {
+if (vsp_abs > 0)
+{
     repeat (vsp_abs)
     {
         if (!place_meeting(x, y + vsp_sign, obj_solid))
@@ -172,27 +163,30 @@ if (vsp_abs > 0) {
         }
         else
         {
-            if (vsp < 0) 
-            {
-                if (!place_meeting(x + 1, y + vsp_sign, obj_solid)) { x += 1; continue; }
-                if (!place_meeting(x - 1, y + vsp_sign, obj_solid)) { x -= 1; continue; }
-            }
-            
             vsp = 0;
-            vsp_frac = 0; 
+            vsp_frac = 0;
             break;
         }
     }
 }
 
+
+//-------------------------------------------------
+// DIRECCIÓN SPRITE
+//-------------------------------------------------
+
 if (move != 0)
-{
     image_xscale = sign(move) * base_scale;
-}
+
+
+//-------------------------------------------------
+// SISTEMA DE CÁMARA (INTACTO)
+//-------------------------------------------------
 
 var input_detectado = (input_right || input_left || input_jump_pressed || input_attack);
 
-if (input_detectado) ya_se_movio = true;
+if (input_detectado)
+    ya_se_movio = true;
 
 var target_w = ya_se_movio ? cam_ancho_juego : cam_ancho_inicio;
 var target_h = ya_se_movio ? cam_alto_juego : cam_alto_inicio;
@@ -216,11 +210,17 @@ var cam_target_y = target_y - (new_h / 2);
 cam_target_x = clamp(cam_target_x, 0, room_width - new_w);
 cam_target_y = clamp(cam_target_y, 0, room_height - new_h);
 
-var cam_vel = ya_se_movio ? 0.1 : 0.05; 
+var cam_vel = ya_se_movio ? 0.1 : 0.05;
+
 var new_cam_x = lerp(cur_x, cam_target_x, cam_vel);
 var new_cam_y = lerp(cur_y, cam_target_y, cam_vel);
 
 camera_set_view_pos(cam, new_cam_x, new_cam_y);
+
+
+//-------------------------------------------------
+// ANIMACIONES
+//-------------------------------------------------
 
 if (!isAttacking)
 {
@@ -242,8 +242,6 @@ if (!isAttacking)
                 image_index = 0;
             }
         }
-
-        image_speed = 1;
     }
     else
     {
@@ -274,7 +272,7 @@ if (!isAttacking)
                 image_index = 0;
             }
         }
-
-        image_speed = 1;
     }
+
+    image_speed = 1;
 }
