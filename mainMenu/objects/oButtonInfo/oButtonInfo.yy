@@ -7,7 +7,7 @@
   "managed":true,
   "name":"oButtonInfo",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParent_1","path":"objects/oButtonParent_1/oButtonParent_1.yy",},"propertyId":{"name":"button_text","path":"objects/oButtonParent_1/oButtonParent_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Info",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParent_1","path":"objects/oButtonParent_1/oButtonParent_1.yy",},"propertyId":{"name":"button_text","path":"objects/oButtonParent_1/oButtonParent_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Controls",},
   ],
   "parent":{
     "name":"Objects",
