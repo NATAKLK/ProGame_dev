@@ -6,4 +6,4 @@ holaaaaaaaaaaaa
 
 - Hola Jotanan, querido amigo y compañero programador. Te pido de favor que restructures tu mensaje, tu cara, tu actidad y tu mente. Te haces parecer que eres buena persona pero todos sabemos que no es verdad.
 
-- Son unos tontos todos, no saben programar, por favor ya terminen el juego. Ok mañana
+jajaja, i dont understad english
