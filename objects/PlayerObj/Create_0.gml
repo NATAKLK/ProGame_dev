@@ -4,7 +4,7 @@ vsp = 0;
 hsp_frac = 0;
 vsp_frac = 0;
 
-maxSpeed = 3;
+maxSpeed = 1.5;
 
 gravity_up = 0.1;
 gravity_down = 0.1;
